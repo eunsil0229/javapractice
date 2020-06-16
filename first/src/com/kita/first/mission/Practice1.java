@@ -1,0 +1,25 @@
+package com.kita.first.mission;
+
+import java.util.Scanner;
+
+public class Practice1 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("숫자 1을 입력 : ");
+		String n1 = scan.next();
+		
+		int num1 = Integer.parseInt(n1); // 파싱하기
+
+		System.out.print("숫자 2를 입력 : ");
+		String n2 = scan.next();
+		
+		int num2 = Integer.parseInt(n2);
+
+		scan.close();
+		System.out.println(n1 + " + " + n2 + " = " + (n1 + n2));
+		// System.out.printf("%d + %d = %d\n", n1, n2, (n1 + n2)); -> String으로 받고 %d 사용하면 error!
+
+		System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+		
+	}
+}
