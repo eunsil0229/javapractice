@@ -120,6 +120,10 @@ class MyList {
 			}
 			*/
 			arr2[i] = (i < idx) ? arr[i] : arr[i+1];
+			
+			// for문의 범위가 arr.length일 경우
+			// arr2[i-1] = arr[i];
+			// arr2[(i<idx) ? i : i-1] = arr[i];
 		}
 		arr = arr2;
 		return num;
